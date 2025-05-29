@@ -38,3 +38,89 @@
   </div>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Consigue tus Leads Premium</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: Arial, sans-serif; background: #f6f6f6; margin: 0; padding: 0; }
+    .container { background: #fff; border-radius: 8px; max-width: 410px; margin: 40px auto 0; box-shadow: 0 2px 10px #0001; padding: 28px 20px; }
+    h2 { margin-bottom: 20px; text-align: center;}
+    .button {
+      width: 100%;
+      padding: 15px 0;
+      margin: 14px 0;
+      background: #0b7dda;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1em;
+      cursor: pointer;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+      transition: background 0.2s;
+    }
+    .button.whatsapp { background: #25d366; }
+    .button:hover { opacity:0.93; }
+    .divider { text-align: center; margin: 24px 0 10px; color: #888; }
+    .socials { display: flex; justify-content: center; gap: 22px; margin-top: 22px;}
+    .socials a { text-decoration: none; font-size: 28px; filter: grayscale(50%); transition: filter .2s;}
+    .socials a:hover { filter: grayscale(0%);}
+    .footer { text-align: center; font-size: 0.9em; color: #888; margin-top: 32px;}
+  </style>
+  <!-- ICONOS DE REDES (FontAwesome CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Consigue tus Leads Premium</h2>
+    <a class="button" id="comprarBtn" href="#" target="_blank">Comprar ahora</a>
+    <div class="divider">o</div>
+    <a class="button whatsapp" id="whatsappBtn" href="#" target="_blank">
+      Aprovechar oportunidad de Negocio
+    </a>
+    <div class="socials">
+      <a id="tiktok" href="#" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+      <a id="instagram" href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a id="facebook" href="#" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      <a id="funpage" href="#" target="_blank" title="Fanpage Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a id="linkedin" href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+  <div class="footer">
+    © 2025 AndaluciaSuperPatch. Hecho con ❤️ para tu éxito.
+  </div>
+  <script>
+    // ENLACES POR DEFECTO (con tus usuarios)
+    const defaultLinks = {
+      comprar: "https://111236288.superpatch.com/es",
+      whatsapp: "https://wa.me/34654669289?text=Hola,%20quiero%20saber%20más%20sobre%20la%20oportunidad%20de%20negocio",
+      tiktok: "https://www.tiktok.com/@andaluciasuperpatch",
+      instagram: "https://www.instagram.com/fer_go1975",
+      facebook: "https://www.facebook.com/Fernando.gabaldonoliver",
+      funpage: "https://www.facebook.com/beautymuch.mynuskin",
+      linkedin: "https://www.linkedin.com/in/fernando-gabaldon-o"
+    };
+
+    // Función para obtener parámetros de la URL
+    function getParam(name, def) {
+      try {
+        const url = new URL(window.location.href);
+        return url.searchParams.get(name) || def;
+      } catch { return def; }
+    }
+
+    // Asignar enlaces dinámicamente
+    document.getElementById("comprarBtn").href = getParam("comprar", defaultLinks.comprar);
+    document.getElementById("whatsappBtn").href = getParam("whatsapp", defaultLinks.whatsapp);
+    document.getElementById("tiktok").href = getParam("tiktok", defaultLinks.tiktok);
+    document.getElementById("instagram").href = getParam("instagram", defaultLinks.instagram);
+    document.getElementById("facebook").href = getParam("facebook", defaultLinks.facebook);
+    document.getElementById("funpage").href = getParam("funpage", defaultLinks.funpage);
+    document.getElementById("linkedin").href = getParam("linkedin", defaultLinks.linkedin);
+  </script>
+</body>
+</html>
