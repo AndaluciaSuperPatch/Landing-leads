@@ -5,15 +5,12 @@
   <title>Consigue tus Leads Premium</title>
   <style>
     body { font-family: Arial, sans-serif; padding: 40px; background: #f6f6f6; }
-    .form-container { background: #fff; border-radius: 8px; max-width: 400px; margin: 0 auto 30px; box-shadow: 0 2px 10px #0001; padding: 24px; }
-    .form-container h2 { margin-bottom: 18px; }
-    .form-group { margin-bottom: 16px; }
-    label { display: block; margin-bottom: 5px; font-weight: bold; }
-    input { width: 100%; padding: 8px; border-radius: 4px; border: 1px solid #bbb; }
-    button, .main-link {
+    .container { background: #fff; border-radius: 8px; max-width: 400px; margin: 0 auto 30px; box-shadow: 0 2px 10px #0001; padding: 24px; }
+    h2 { margin-bottom: 18px; text-align: center;}
+    .button {
       width: 100%;
       padding: 12px 0;
-      margin-top: 16px;
+      margin: 12px 0;
       background: #0b7dda;
       color: #fff;
       border: none;
@@ -23,31 +20,21 @@
       text-decoration: none;
       display: block;
       text-align: center;
+      transition: background 0.2s;
     }
-    button:hover, .main-link:hover { background: #095c9d; }
-    .divider { text-align: center; margin: 30px 0 10px; color: #888; }
+    .button.whatsapp {
+      background: #25d366;
+    }
+    .button:hover { opacity:0.9; }
+    .divider { text-align: center; margin: 24px 0 10px; color: #888; }
   </style>
 </head>
 <body>
-  <div class="form-container">
-    <h2>¡Consigue leads premium o únete a la oportunidad de negocio!</h2>
-    <form action="https://formspree.io/f/tu_codigo_formspree_aqui" method="POST">
-      <div class="form-group">
-        <label for="nombre">Nombre</label>
-        <input type="text" name="nombre" id="nombre" required>
-      </div>
-      <div class="form-group">
-        <label for="email">Correo electrónico</label>
-        <input type="email" name="email" id="email" required>
-      </div>
-      <div class="form-group">
-        <label for="whatsapp">WhatsApp</label>
-        <input type="text" name="whatsapp" id="whatsapp" required>
-      </div>
-      <button type="submit">Enviar</button>
-    </form>
-    <div class="divider">o si lo prefieres</div>
-    <a class="main-link" href="https://111236288.superpatch.com/es" target="_blank">Ir a la oferta</a>
+  <div class="container">
+    <h2>¿Qué te interesa?</h2>
+    <a class="button" href="https://111236288.superpatch.com/es" target="_blank">Comprar ahora</a>
+    <div class="divider">o</div>
+    <a class="button whatsapp" href="https://wa.me/34654669289?text=Hola,%20quiero%20saber%20más%20sobre%20la%20oportunidad%20de%20negocio" target="_blank">Aprovechar oportunidad de Negocio</a>
   </div>
 </body>
 </html>
